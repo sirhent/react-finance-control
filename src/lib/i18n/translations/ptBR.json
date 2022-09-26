@@ -1,5 +1,14 @@
 {
   "translation": {
-    "hello": "Olá mundo!"
+    "common": {
+      "logoAltText": "Finance Control Logomarca"
+    },
+    "pages": {
+      "transactions": {
+        "header": {
+          "newTransaction": "NOVA TRANSAÇÃO"
+        }
+      }
+    }
   }
 }

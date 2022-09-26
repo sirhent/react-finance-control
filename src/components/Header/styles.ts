@@ -6,6 +6,7 @@ export const Background = styled.div`
 
 export const HeaderContainer = styled.div`
   max-width: ${(props) => props.theme.container_default_width};
+  margin: 0 auto;
   padding-top: 4rem;
   padding-right: ${(props) => props.theme.container_default_padding_horizontal};
   padding-bottom: 13rem;

@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import { Home } from "./pages/Home";
+import { Transactions } from "./pages/Transactions";
 import { GlobalStyle } from "./styles/global";
 import { darkTheme } from "./styles/themes/darkTheme";
 
@@ -8,7 +8,7 @@ export function App() {
     <ThemeProvider theme={darkTheme}>
       <GlobalStyle />
 
-      <Home />
+      <Transactions />
     </ThemeProvider>
   );
 }
