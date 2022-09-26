@@ -1,5 +1,7 @@
 import {
   Activity,
+  ArrowCircleDown,
+  ArrowCircleUp,
   ArrowClockwise,
   Bell,
   CaretCircleLeft,
@@ -38,6 +40,8 @@ export interface RenderableIconList {
   iconName:
     | "Activity"
     | "ArrowClockwise"
+    | "ArrowCircleDown"
+    | "ArrowCircleUp"
     | "Bell"
     | "CaretCircleLeft"
     | "CaretDown"
@@ -79,6 +83,13 @@ export function InsertIcon(props: InsertIconProps) {
   switch (props.iconName) {
     case "Activity":
       return <Activity weight={props.iconWeight} size={props.iconSize} />;
+    
+    case "ArrowCircleDown":
+      return <ArrowCircleDown weight={props.iconWeight} size={props.iconSize} />;
+
+    case "ArrowCircleUp":
+      return <ArrowCircleUp weight={props.iconWeight} size={props.iconSize} />;
+
     case "ArrowClockwise":
       return <ArrowClockwise weight={props.iconWeight} size={props.iconSize} />;
 

@@ -9,19 +9,17 @@ export function Header() {
   const { t } = useTranslation();
 
   return (
-    <Styled.Background>
-      <Styled.HeaderContainer>
-        <img
-          src={financeControlLogo}
-          alt=""
-          title={t("common.logoAltText")}
-        />
+    <Styled.HeaderContainer>
+      <img
+        src={financeControlLogo}
+        alt=""
+        title={t("common.logoAltText")}
+      />
 
-        <DefaultButton
-          buttonText={t("pages.transactions.header.newTransaction")}
-          variant="primary_standard"
-        />
-      </Styled.HeaderContainer>
-    </Styled.Background>
+      <DefaultButton
+        buttonText={t("pages.transactions.header.newTransaction")}
+        variant="primary_standard"
+      />
+    </Styled.HeaderContainer>
   );
 }

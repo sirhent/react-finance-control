@@ -58,6 +58,7 @@ export const darkTheme = {
   color_semantic_success_4: "rgba(15, 156, 88, 0.04)",
   color_semantic_success_light: "rgba(35, 202, 122, 1)",
   color_semantic_success_light_70: "rgba(35, 202, 122, 0.7)",
+  color_semantic_success_light_50: "rgba(35, 202, 122, 0.5)",
   color_semantic_success_light_10: "rgba(35, 202, 122, 0.1)",
   // Semantic colors - Progress
   color_semantic_progress: "rgba(17, 180, 190, 1)",
@@ -67,6 +68,7 @@ export const darkTheme = {
   color_semantic_progress_4: "rgba(17, 180, 190, 0.04)",
   color_semantic_progress_light: "rgba(38, 218, 229, 1)",
   color_semantic_progress_light_70: "rgba(38, 218, 229, 0.7)",
+  color_semantic_progress_light_50: "rgba(38, 218, 229, 0.5)",
   // Semantic colors - Warning
   color_semantic_warning: "rgba(203, 123, 30, 1)",
   color_semantic_warning_90: "rgba(203, 123, 30, 0.90)",
@@ -82,6 +84,7 @@ export const darkTheme = {
   color_semantic_error_4: "rgba(190, 17, 59, 0.04)",
   color_semantic_error_light: "rgba(255, 54, 102, 1)",
   color_semantic_error_light_70: "rgba(255, 54, 102, 0.7)",
+  color_semantic_error_light_50: "rgba(255, 54, 102, 0.5)",
   color_semantic_error_dark: "rgba(153, 22, 54, 1)",
   // Semantic colors - Information
   color_semantic_information: "rgba(113, 136, 171, 1)",
@@ -122,10 +125,10 @@ export const darkTheme = {
   stroke_size_regular: "3px",
 
   /* Borders and strokes colors */
-  color_stroke_color: "rgba(40, 43, 47, 1)",
-  color_stroke_color_light: "rgba(49, 52, 56, 1)",
-  color_border_color: "rgba(50, 53, 57, 1)",
-  color_border_color_light: "rgba(60, 63, 67, 1)",
+  color_stroke: "rgba(40, 43, 47, 1)",
+  color_stroke_light: "rgba(49, 52, 56, 1)",
+  color_border: "rgba(50, 53, 57, 1)",
+  color_border_light: "rgba(60, 63, 67, 1)",
   color_button_stroke_default: "rgba(255, 255, 255, 0.2)",
   color_button_stroke_hover: "rgba(255, 255, 255, 0.4)",
 

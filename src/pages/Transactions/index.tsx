@@ -1,7 +1,10 @@
-import { Header } from "../../components/Header";
+import { Summary } from "../../features/Summary";
+import { DefaultPageLayout } from "../../layouts/DefaultPageLayout";
 
 export function Transactions() {
   return (
-    <Header />
+    <DefaultPageLayout>
+      <Summary />
+    </DefaultPageLayout>
   );
 }
