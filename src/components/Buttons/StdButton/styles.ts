@@ -23,7 +23,7 @@ const baseButtonVariants = {
     default_bg: "color_semantic_success_90",
     text_color: "color_font_button_opaque",
     border_color: "color_button_stroke_default",
-    hover_bg: "color_semantic_success_light",
+    hover_bg: "color_semantic_success_light_70",
     default_shadow: "fx_button_success_hover_underglow_transparent",
     hover_shadow: "fx_button_success_hover_underglow",
   },

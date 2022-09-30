@@ -13,6 +13,29 @@
           "buttonText": "BUSCAR"
         }
       }
+    },
+    "modals": {
+      "newTransaction": {
+        "title": "NOVA TRANSAÇÃO",
+        "form": {
+          "inputOne": {
+            "label": "Descrição",
+            "placeholder": "Descrição"
+          },
+          "inputTwo": {
+            "label": "Valor",
+            "placeholder": "Valor"
+          },
+          "inputThree": {
+            "label": "Categoria",
+            "placeholder": "Categoria"
+          },
+          "submitButton": {
+            "text": "CADASTRAR",
+            "title": "Cadastrar"
+          }
+        }
+      }
     }
   }
 }

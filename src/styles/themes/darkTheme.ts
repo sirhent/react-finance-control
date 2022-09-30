@@ -97,6 +97,7 @@ export const darkTheme = {
 
   /* Backgrounds */
   color_bg_primary: "rgba(18, 21, 24, 1)",
+  color_bg_primary_50: "rgba(18, 21, 24, 0.50)", 
   color_bg_secondary: "rgba(25, 28, 31, 1)",
   color_bg_secondary_light: "rgba(30, 32, 35, 1)",
   color_bg_tertiary: "rgba(34, 36, 39, 1)",
@@ -176,4 +177,8 @@ export const darkTheme = {
     "0px 4px 30px rgba(154, 176, 209, 0.25), 0px 4px 10px rgba(154, 176, 209, 0.3), 0px 5px 25px rgba(154, 176, 209, 0.5)",
   fx_button_information_hover_underglow_transparent:
     "0px 4px 30px rgba(154, 176, 209, 0), 0px 4px 10px rgba(154, 176, 209, 0), 0px 5px 25px rgba(154, 176, 209, 0)",
+  // Radio buttons underglow
+  fx_button_radio_success_underglow: "0px 0px 15px rgba(35, 202, 122, 0.5), 0px 4px 30px rgba(35, 202, 122, 0.25)",
+  fx_button_radio_success_underglow_transparent: "0px 0px 15px rgba(35, 202, 122, 0), 0px 4px 30px rgba(35, 202, 122, 0)",
+  fx_button_radio_error_underglow: "0px 0px 15px rgba(255, 66, 134, 0.5), 0px 4px 30px rgba(255, 66, 134, 0.25)",
 } as const;

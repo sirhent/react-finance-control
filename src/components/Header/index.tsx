@@ -4,6 +4,8 @@ import * as Styled from "./styles";
 
 import financeControlLogo from "../../assets/images/brand/Finance_Control_Logo.svg";
 import { DefaultButton } from "../Buttons/StdButton";
+import * as Dialog from "@radix-ui/react-dialog";
+import { NewTransactionModal } from "../../features/NewTransactionModal";
 
 export function Header() {
   const { t } = useTranslation();
@@ -16,10 +18,16 @@ export function Header() {
         title={t("common.logoAltText")}
       />
 
-      <DefaultButton
-        buttonText={t("pages.transactions.header.newTransaction")}
-        variant="primary_standard"
-      />
+      <Dialog.Root>
+        <Dialog.Trigger asChild>
+          <DefaultButton
+            buttonText={t("pages.transactions.header.newTransaction")}
+            variant="primary_standard"
+          />
+        </Dialog.Trigger>
+
+        <NewTransactionModal />
+      </Dialog.Root>
     </Styled.HeaderContainer>
   );
 }

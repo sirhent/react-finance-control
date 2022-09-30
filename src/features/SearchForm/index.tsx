@@ -9,6 +9,7 @@ export function SearchForm() {
   return (
     <Styled.SearchFormContainer>
       <DefaultInput
+        type="text"
         labelText={t("pages.transactions.searchForm.label")}
         placeholder={t("pages.transactions.searchForm.label")}
       />

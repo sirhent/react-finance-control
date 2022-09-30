@@ -13,6 +13,29 @@
           "buttonText": "SEARCH"
         }
       }
+    },
+    "modals": {
+      "newTransaction": {
+        "title": "NEW TRANSACTION",
+        "form": {
+          "inputOne": {
+            "label": "Description",
+            "placeholder": "Description"
+          },
+          "inputTwo": {
+            "label": "Amount",
+            "placeholder": "Amount"
+          },
+          "inputThree": {
+            "label": "Category",
+            "placeholder": "Category"
+          },
+          "submitButton": {
+            "text": "Create",
+            "title": "Create"
+          }
+        }
+      }
     }
   }
 }
