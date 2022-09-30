@@ -1,3 +1,4 @@
+import { SearchForm } from "../../features/SearchForm";
 import { Summary } from "../../features/Summary";
 import { TransactionItemData, TransactionsList } from "../../features/TransactionsList";
 import { DefaultPageLayout } from "../../layouts/DefaultPageLayout";
@@ -13,7 +14,7 @@ const transactionsData_dummy: TransactionItemData[] = [
   {
     transactionTitle: "Hamburguer",
     transactionValue: "- R$ 59,90",
-    transactionType: "spent",
+    transactionType: "outcome",
     transactionCategory: "Alimentação",
     transactionDate: "10/04/2022",
   },
@@ -24,6 +25,7 @@ export function Transactions() {
     <DefaultPageLayout>
       <Summary />
 
+      <SearchForm />
       <TransactionsList list={transactionsData_dummy} />
     </DefaultPageLayout>
   );

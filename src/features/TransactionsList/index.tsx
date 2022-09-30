@@ -7,7 +7,7 @@ export interface TransactionItemVariants {
 export interface TransactionItemData {
   transactionTitle: string;
   transactionValue: string;
-  transactionType: "income" | "spent";
+  transactionType: "income" | "outcome";
   transactionCategory: string;
   transactionDate: string;
 }
@@ -21,6 +21,7 @@ export function TransactionsList(props: TransactionsListProps) {
       {props.list.map((transaction) => {
         return (
           <Styled.TransactionItem
+            key={transaction.transactionTitle}
             themeColor={
               transaction.transactionType === "income" ? "success" : "error"
             }
@@ -44,7 +45,7 @@ export function TransactionsList(props: TransactionsListProps) {
             </Styled.TransactionValue>
 
             <Styled.TransactionType>
-              {transaction.transactionType}
+              {transaction.transactionCategory}
             </Styled.TransactionType>
 
             <Styled.TransactionDate>

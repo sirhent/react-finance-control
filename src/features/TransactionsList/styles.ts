@@ -18,7 +18,7 @@ const themeColors = {
 
 export const ItemLeftBar = styled.div<TransactionItemVariants>`
   min-width: 0.6rem;
-  height: 4.6rem;
+  height: 3.6rem;
   
   border-radius: ${(props) => props.theme.border_radius_circle};
   background-color: ${(props) =>
@@ -44,7 +44,7 @@ export const TransactionValue = styled.span<TransactionItemVariants>`
 `;
 
 export const TransactionsListContainer = styled.div`
-  margin-top: 6rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;

@@ -28,7 +28,8 @@ export interface DefaultButtonIcons {
     | "CaretRight"
     | "PencilSimple"
     | "CopySimple"
-    | "DownloadSimple";
+    | "DownloadSimple"
+    | "MagnifyingGlass";
   iconWeight?: undefined | IconWeight;
   iconSize?: undefined | number;
 }

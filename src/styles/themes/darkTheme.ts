@@ -146,6 +146,11 @@ export const darkTheme = {
     "0px 4px 30px rgba(255, 54, 102, 0.05), 0px 4px 10px rgba(255, 54, 102, 0.05), 0px 5px 25px rgba(255, 54, 102, 0.05)",
   fx_shadow_info_underglow_soft:
     "0px 4px 30px rgba(154, 176, 209, 0.1), 0px 4px 10px rgba(154, 176, 209, 0.1), 0px 5px 25px rgba(154, 176, 209, 0.1)",
+  // Inputs underglow
+  fx_input_underglow_blue:
+    "0px 0px 20px rgba(51, 133, 255, 0.5), 0px 4px 10px rgba(51, 133, 255, 0.25)",
+  fx_input_underglow_blue_transparent:
+    "0px 0px 20px rgba(51, 133, 255, 0), 0px 4px 10px rgba(51, 133, 255, 0)",
   // Buttons underglow hover effect
   fx_button_primary_hover_underglow:
     "0px 4px 30px rgba(51, 133, 255, 0.25), 0px 4px 10px rgba(51, 133, 255, 0.3), 0px 5px 25px rgba(51, 133, 255, 0.5)",

@@ -7,6 +7,10 @@
       "transactions": {
         "header": {
           "newTransaction": "NOVA TRANSAÇÃO"
+        },
+        "searchForm": {
+          "label": "Busque por transações",
+          "buttonText": "BUSCAR"
         }
       }
     }
