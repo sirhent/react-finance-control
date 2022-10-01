@@ -100,11 +100,13 @@ export const TransactionTitle = styled.h1`
 
 
 export const TransactionType = styled.span`
-  max-width: 24rem;
+  max-width: 22rem;
   width: 100%;
 `;
 
 export const TransactionDate = styled.span`
-  max-width: 10rem;
+  max-width: 12rem;
   width: 100%;
+
+  font-size: 1.4rem;
 `;

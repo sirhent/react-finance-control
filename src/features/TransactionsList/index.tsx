@@ -1,3 +1,4 @@
+import { dateFormatter, priceFormatter } from "../../helpers/formatter";
 import * as Styled from "./styles";
 
 export interface TransactionItemVariants {
@@ -43,8 +44,8 @@ export function TransactionsList(props: TransactionsListProps) {
               }
             >
               {transaction.type === "income"
-                ? `+ R$ ${transaction.value.toFixed(2)}`
-                : `- R$ ${transaction.value.toFixed(2)}`
+                ? `+ ${priceFormatter.format(transaction.value)}`
+                : `- ${priceFormatter.format(transaction.value)}`
               }
             </Styled.TransactionValue>
 
@@ -53,7 +54,7 @@ export function TransactionsList(props: TransactionsListProps) {
             </Styled.TransactionType>
 
             <Styled.TransactionDate>
-              {transaction.createdAt}
+              {dateFormatter.format(new Date(transaction.createdAt))}
             </Styled.TransactionDate>
           </Styled.TransactionItem>
         );
