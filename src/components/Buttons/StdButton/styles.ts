@@ -170,6 +170,10 @@ export const baseButtonStylesMixin = css<DefaultButtonVariants>`
   &:disabled {
     color: ${(props) => props.theme.color_font_text_secondary};
     background-color: ${(props) => props.theme.color_bg_tertiary};
+    border:
+      ${(props) => props.theme.stroke_size_tiny}
+      solid
+      ${(props) => props.theme.color_border};
 
     cursor: not-allowed;
   }
