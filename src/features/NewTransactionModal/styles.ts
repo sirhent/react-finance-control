@@ -178,11 +178,6 @@ export const TransactionTypeButton = styled(RadioGroup.Item)<TransactionTypeButt
   }
 
   &[data-state="checked"] ${RadioButton} {
-    /* border:
-      ${(props) => props.theme.stroke_size_tiny}
-      solid
-      ${(props) => props.theme.color_white_40}; */
-    /* background-color: ${(props) => props.theme.color_bg_secondary}; */
     border:
       ${(props) => props.theme.stroke_size_tiny}
       solid

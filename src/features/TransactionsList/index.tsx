@@ -5,51 +5,55 @@ export interface TransactionItemVariants {
 }
 
 export interface TransactionItemData {
-  transactionTitle: string;
-  transactionValue: string;
-  transactionType: "income" | "outcome";
-  transactionCategory: string;
-  transactionDate: string;
+  id: number;
+  title: string;
+  value: number;
+  type: "income" | "outcome";
+  category: string;
+  createdAt: string;
 }
 interface TransactionsListProps {
-  list: TransactionItemData[];
+  transactions: TransactionItemData[];
 }
 
 export function TransactionsList(props: TransactionsListProps) {
   return (
     <Styled.TransactionsListContainer>
-      {props.list.map((transaction) => {
+      {props.transactions.map((transaction) => {
         return (
           <Styled.TransactionItem
-            key={transaction.transactionTitle}
+            key={transaction.id}
             themeColor={
-              transaction.transactionType === "income" ? "success" : "error"
+              transaction.type === "income" ? "success" : "error"
             }
           >
             <Styled.ItemLeftBar
               themeColor={
-                transaction.transactionType === "income" ? "success" : "error"
+                transaction.type === "income" ? "success" : "error"
               }
             />
 
             <Styled.TransactionTitle>
-              {transaction.transactionTitle}
+              {transaction.title}
             </Styled.TransactionTitle>
 
             <Styled.TransactionValue
               themeColor={
-                transaction.transactionType === "income" ? "success" : "error"
+                transaction.type === "income" ? "success" : "error"
               }
             >
-              {transaction.transactionValue}
+              {transaction.type === "income"
+                ? `+ R$ ${transaction.value.toFixed(2)}`
+                : `- R$ ${transaction.value.toFixed(2)}`
+              }
             </Styled.TransactionValue>
 
             <Styled.TransactionType>
-              {transaction.transactionCategory}
+              {transaction.category}
             </Styled.TransactionType>
 
             <Styled.TransactionDate>
-              {transaction.transactionDate}
+              {transaction.createdAt}
             </Styled.TransactionDate>
           </Styled.TransactionItem>
         );

@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "title": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "value": 12000,
+      "createdAt": "2022-09-30T22:38:38.917Z"
+    },
+    {
+      "id": 2,
+      "title": "Hamburger",
+      "type": "outcome",
+      "category": "Alimentação",
+      "value": 59.90,
+      "createdAt": "2022-09-30T20:21:38.917Z"
+    },
+    {
+      "id": 3,
+      "title": "Betoneira 400L biturbo 900CV",
+      "type": "outcome",
+      "category": "Decoração",
+      "value": 6900.90,
+      "createdAt": "2022-09-30T19:21:38.917Z"
+    }
+  ]
+}
