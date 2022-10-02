@@ -13,7 +13,7 @@
       "title": "Hamburger",
       "type": "outcome",
       "category": "Alimentação",
-      "value": 59.90,
+      "value": 59.9,
       "createdAt": "2022-09-30T20:21:38.917Z"
     },
     {
@@ -21,8 +21,24 @@
       "title": "Betoneira 400L biturbo 900CV",
       "type": "outcome",
       "category": "Decoração",
-      "value": 6900.90,
+      "value": 6900.9,
       "createdAt": "2022-09-30T19:21:38.917Z"
+    },
+    {
+      "title": "Tubarão linguiça",
+      "value": 2450,
+      "category": "Lazer",
+      "type": "outcome",
+      "createdAt": "2022-10-01T18:44:28.798Z",
+      "id": 4
+    },
+    {
+      "title": "Fusca envenenado biturbo",
+      "value": 700,
+      "category": "Esportes",
+      "type": "outcome",
+      "createdAt": "2022-10-01T18:58:38.368Z",
+      "id": 5
     }
   ]
 }
