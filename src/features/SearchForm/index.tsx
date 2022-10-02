@@ -6,7 +6,7 @@ import * as Styled from "./styles";
 import * as zod from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { TransactionsContext } from "../../contexts/TransactionsContext";
-import { useContext } from "react";
+import { useContextSelector } from "use-context-selector";
 
 const searchFormSchema = zod.object({
   query: zod.string(),
@@ -16,7 +16,14 @@ type SearchFormInputs = zod.infer<typeof searchFormSchema>;
 
 export function SearchForm() {
   const { t } = useTranslation();
-  const { fetchTransactions } = useContext(TransactionsContext);
+
+  const fetchTransactions = useContextSelector(
+    TransactionsContext,
+    (context) => {
+      return context.fetchTransactions;
+    }
+  );
+
   const {
     register,
     handleSubmit,

@@ -1,4 +1,5 @@
 import { IconWeight } from "phosphor-react";
+import { forwardRef, ReactNode } from "react";
 
 import { InsertIcon } from "../../InsertIcon";
 import * as Styled from "./styles";
@@ -39,27 +40,56 @@ interface DefaultButtonProps
     DefaultButtonVariants,
     DefaultButtonIcons {
   buttonText: undefined | string;
+  children?: ReactNode;
 }
 
-export function DefaultButton({
-  iconName = undefined,
-  iconWeight = "bold",
-  iconSize = 16,
-  type = "button",
-  buttonText,
-  ...otherProps
-}: DefaultButtonProps) {
-  return (
-    <Styled.BaseButton type={type} {...otherProps}>
-      {iconName && (
-        <InsertIcon
-          iconName={iconName}
-          iconWeight={iconWeight}
-          iconSize={iconSize}
-        />
-      )}
-      {buttonText}
-      {otherProps.children}
-    </Styled.BaseButton>
-  );
-}
+export const DefaultButton = forwardRef(function DefaultButton({
+    iconName = undefined,
+    iconWeight = "bold",
+    iconSize = 16,
+    type = "button",
+    buttonText,
+    children,
+    ...otherProps
+  }: DefaultButtonProps,
+  ref) {
+
+    return (
+      <Styled.BaseButton type={type} {...otherProps}>
+        {iconName && (
+          <InsertIcon
+            iconName={iconName}
+            iconWeight={iconWeight}
+            iconSize={iconSize}
+          />
+        )}
+        {buttonText}
+        {children}
+      </Styled.BaseButton>
+    );
+  }
+);
+
+// export function DefaultButton({
+//   iconName = undefined,
+//   iconWeight = "bold",
+//   iconSize = 16,
+//   type = "button",
+//   buttonText,
+//   children,
+//   ...otherProps
+// }: DefaultButtonProps) {
+//   return (
+//     <Styled.BaseButton type={type} {...otherProps}>
+//       {iconName && (
+//         <InsertIcon
+//           iconName={iconName}
+//           iconWeight={iconWeight}
+//           iconSize={iconSize}
+//         />
+//       )}
+//       {buttonText}
+//       {children}
+//     </Styled.BaseButton>
+//   );
+// }

@@ -21,9 +21,11 @@ export function Header() {
       <Dialog.Root>
         <Dialog.Trigger asChild>
           <DefaultButton
+            type="button"
             buttonText={t("pages.transactions.header.newTransaction")}
-            variant="primary_standard"
+            variant="primary_standard" 
           />
+          {/* <button>nova transação</button> */}
         </Dialog.Trigger>
 
         <NewTransactionModal />
